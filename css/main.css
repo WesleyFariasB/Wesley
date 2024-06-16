@@ -29,7 +29,6 @@ header h6{
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: red;
 }
 
 .slide img, .slide2 img {
@@ -44,7 +43,8 @@ header h6{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 5rem;
+  margin-bottom: 120px;
 }
 
 /* Slideshow */
@@ -94,14 +94,19 @@ header h6{
   .infinite img{
     gap: 5rem;
     width: 2.5rem;
-    margin-bottom: -0%;
+    margin-bottom: -0.4%;
   }
   .mid{
     margin-bottom: 150px;
   }
   .line{
+    padding-left: 14.7rem;
+    margin-bottom: 100px;
+  }
+  .line2{
     padding-left: 20rem;
     margin-bottom: 100px;
+    
   }
 .bar{
   width:fit-content;
@@ -119,7 +124,8 @@ header h6{
 }
 
 .second-div{
- padding-left: 15rem;
+  position: relative;
+  left: -10rem;
 }
 .second-div img{
   height: 12rem;
@@ -129,26 +135,34 @@ header h6{
   position: relative;
   top: -5px;
   height: 1.9px;
+  width: 11.2rem;
 }
 .last-footer{
   display: flex;
 }
 .name{
   padding-left: 7.2rem;
+  z-index: 99;
+  position: relative;
 }
 .last-footer .name h5{
-   position: absolute;
+   z-index: 99;
 }
-.last-footer .name img{
-  width:fit-content;
+.final img{
+  position: absolute;
+  left: 8.5rem;
+  bottom: 0.6rem;
+}
+.final{
   position: relative;
-  left: 5.5rem;
-  top: 1.8rem;
+  left: 5rem;
 }
+
 .last-image{
     position: relative;
     width: fit-content;
     position: relative;
-    left: 63rem;
+    left: 68rem;
     bottom: -3.3rem;
+    gap: 5px;
 }
