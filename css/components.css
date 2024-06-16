@@ -1,0 +1,56 @@
+.s-digital{
+  margin-bottom: 110px;
+}
+.s-digital div{
+    display: flex;
+    justify-content: space-between;
+}
+.s-digital-right{
+  padding-left: 4rem;
+}
+
+.l1{
+    padding-left: 5rem;
+    margin-top: 1rem;
+    width:fit-content;
+}
+.l2{
+    padding-left: 5rem;
+    margin-top: -500px;
+    width:fit-content;
+}
+.l3{
+    padding-left: 5rem;
+    margin-top: -500px;
+    width:fit-content;
+}
+.circle{
+  background-color: none;
+  width:fit-content;
+  position: relative;
+  padding-left: 5rem;
+  margin-top: -4rem;
+  
+}
+.circle img{
+  position: absolute;
+  width: 5rem;
+  top: calc(50% - 2.60rem);
+  left: calc(50% - 2.5rem);
+  padding-left: 2.50rem;
+  
+}
+.post{
+  display: flex;
+}
+.description{
+  padding-left: 2.8rem;
+}
+.greeting{
+  margin-top: -22.5rem;
+  padding-left: 8rem;
+}
+.fullname{
+  padding-left: 8rem;
+  top: 30rem;
+}

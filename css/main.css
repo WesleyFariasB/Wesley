@@ -1,0 +1,154 @@
+body{
+    background-color: #171717;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width:fit-content;
+}
+header h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    
+}
+header h6{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.slide, .slide2 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: red;
+}
+
+.slide img, .slide2 img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.slideshow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Slideshow */
+.slideshow {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+  .project{
+    margin-bottom: 60px;
+  }
+
+  .infinite{
+    padding-left: 7rem;
+    margin-bottom: 150px
+  }
+
+
+  .infinite img{
+    gap: 5rem;
+    width: 2.5rem;
+    margin-bottom: -0%;
+  }
+  .mid{
+    margin-bottom: 150px;
+  }
+  .line{
+    padding-left: 20rem;
+    margin-bottom: 100px;
+  }
+.bar{
+  width:fit-content;
+  position: relative;
+}
+
+.section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.first-div{
+ padding-left: 13.5rem;
+}
+
+.second-div{
+ padding-left: 15rem;
+}
+.second-div img{
+  height: 12rem;
+}
+.stay img{
+  width: fit-content;
+  position: relative;
+  top: -5px;
+  height: 1.9px;
+}
+.last-footer{
+  display: flex;
+}
+.name{
+  padding-left: 7.2rem;
+}
+.last-footer .name h5{
+   position: absolute;
+}
+.last-footer .name img{
+  width:fit-content;
+  position: relative;
+  left: 5.5rem;
+  top: 1.8rem;
+}
+.last-image{
+    position: relative;
+    width: fit-content;
+    position: relative;
+    left: 63rem;
+    bottom: -3.3rem;
+}
