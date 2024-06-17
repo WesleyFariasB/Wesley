@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/typograph.css" />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="Javascript/carousel.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
       <main class="s-digital">
         <div class="container">
           <div class="post">
             <header>
-              <img src="img/capa.png" alt="Titular">
-              <h5 class="greeting">Olá, eu sou<br></h5>
-              <h1 class="fullname">Wesley<br>Farias</h1>
+              <img src="img/capa.png" alt="Titular" data-aos="fade-right" data-aos-duration="2000" >
+              <h5 class="greeting" data-aos="fade-right" data-aos-duration="2000" >Olá, eu sou<br></h5>
+              <h1 class="fullname" data-aos="fade-right" data-aos-duration="2000" >Wesley<br>Farias</h1>
             </header>
-            <article class="s-digital-right">
+            <article class="s-digital-right" data-aos="fade-left" data-aos-duration="2000" >
             <svg class="l1" xmlns="http://www.w3.org/2000/svg" width="530" height="347" viewBox="0 0 530 347" fill="none">
                 <path d="M1 184.261L184.135 1.11816L529 345.983" stroke="url(#paint0_linear_0_46)" stroke-miterlimit="10"/>
                 <defs>
@@ -56,7 +59,9 @@
                   </linearGradient>
                 </defs>
               </svg>
+           
               <div class="circle">
+                
                 <svg class="rotate" xmlns="http://www.w3.org/2000/svg" width="149" height="148" viewBox="0 0 149 148" fill="none">
                 <path d="M5.44763 45.8388L10.0913 36.4292L12.2138 37.4776L8.70851 44.5846L13.2236 46.81L16.3558 40.4619L18.4333 41.4845L15.301 47.8326L20.1248 50.2124L23.7523 42.8609L25.8554 43.8964L21.0895 53.5504L5.44763 45.8324V45.8388Z" fill="white"/>
                 <path d="M15.166 28.7433L18.4461 25.2573L33.953 31.0265L34.2746 30.6792L23.1734 20.2277L24.8971 18.3947L37.5998 30.3448L34.2681 33.8822L18.8127 28.0615L18.4911 28.4088L29.5923 38.8603L27.8686 40.6934L15.166 28.7433Z" fill="white"/>
@@ -79,6 +84,7 @@
                 <path d="M21.5655 101.505L20.2534 98.4309L8.56703 103.422L9.87909 106.49L7.70518 107.422L4.0777 98.9197L6.25161 97.9871L7.56368 101.061L19.2501 96.0769L17.938 93.0025L20.1184 92.0763L23.7458 100.579L21.5655 101.505Z" fill="white"/>
                 <path d="M1.64009 90.6163L0 80.2548L2.33471 79.8818L3.57604 87.7092L8.54774 86.9181L7.44149 79.9268L9.73118 79.5666L10.8374 86.5579L16.15 85.7153L14.8637 77.6178L17.1791 77.2512L18.8642 87.8828L1.63366 90.6163H1.64009Z" fill="white"/>
               </svg>
+  
               <img class="" src="img/sos.svg" alt="">
             </div>
             <div class="description">
@@ -91,13 +97,13 @@
           </div>
         </div>
       </main>
-
-      <div class="project">
+  
+      <div class="project" data-aos="zoom-in" data-aos-duration="2000">
         <h2>Projetos</h2>
       </div>
 
       <div class="slideshow-container">
-        <div class="slideshow">
+        <div class="slideshow" data-aos="fade-right" data-aos-duration="2000" >
           <div class="slide">
             <img src="img/teste1.jpg" />
           </div>
@@ -114,7 +120,7 @@
           <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
         </div>
 
-        <div class="slideshow">
+        <div class="slideshow" data-aos="fade-left" data-aos-duration="2000" >
           <div class="slide2">
             <img src="img/teste1.jpg" />
           </div>
@@ -132,36 +138,39 @@
         </div>
       </div>
       <div class="infinite">
-        <h3>Pesquisa de Usuário <img src="img/sos.svg" alt=""> UI Design <img src="img/sos.svg" alt=""> Wireframe <img src="img/sos.svg" alt=""> Sistema de Design <img src="img/sos.svg" alt=""> Webflow <img src="img/sos.svg" alt=""></h3>
+        <h3>Pesquisa de Usuário <img src="img/sos.svg" alt="">  UI Design   <img src="img/sos.svg" alt="">   Wireframe   <img src="img/sos.svg" alt="">   Sistema de Design   <img src="img/sos.svg" alt="">   Webflow   <img src="img/sos.svg" alt=""></h3>
       </div>
-      <svg class="line" xmlns="http://www.w3.org/2000/svg" width="1400" height="2" viewBox="0 0 1225 2" fill="none">
+      <svg class="line" xmlns="http://www.w3.org/2000/svg" width="1400" height="2" viewBox="0 0 1225 2" fill="none" data-aos="zoom-in" data-aos-duration="2000">
         <path opacity="0.2" d="M0 1H1225" stroke="white"/>
       </svg>
     
       <section class="container">
         <div class="section">
           <div class="first-div">
-            <h5 class="">Movido pela vontade de<br> tomar iniciativas, costumo<br> fazer projetos que dão<br> significados à critividade e<br> inovação. Sempre em busca<br> de projetos em que unimos<br> conhecimentos de diferentes<br> pessoas afim de chegarmos<br> em um resultado mais amplo</h5>
+            <h5 class="" data-aos="fade-right" data-aos-duration="2000" >Movido pela vontade de<br> tomar iniciativas, costumo<br> fazer projetos que dão<br> significados à critividade e<br> inovação. Sempre em busca<br> de projetos em que unimos<br> conhecimentos de diferentes<br> pessoas afim de chegarmos<br> em um resultado mais amplo</h5>
           </div>
           <div class="second-div" >
-            <img class="" src="img/conhecimento.png" alt="">
+            <img class="" src="img/conhecimento.png" alt="" data-aos="fade-left" data-aos-duration="2000" >
           </div>
         </div>
       </section>
       <div class="line2">
-        <h5 class="stay"><img src="img/linha.svg" alt=""><img src="img/linha.svg" alt=""> HTML & CSS Udemy / Sistemas para internet Estácio <img src="img/linha.svg" alt=""><img src="img/linha.svg" alt=""></h5>
+        <h5 class="stay" data-aos="zoom-in" data-aos-duration="2000"><img src="img/linha.svg" alt=""><img src="img/linha.svg" alt=""> HTML & CSS Udemy / Sistemas para internet Estácio <img src="img/linha.svg" alt=""><img src="img/linha.svg" alt=""></h5>
       </div>
-      <footer class="container">
-        <div class="last-footer">
+      <footer class="container" >
+        <div class="last-footer" >
           <div class="final">
           <img src="img/sos.svg" alt="">
           <h5 class="name"> WESLEY FARIAS®</h5>
           </div>
           <div class="last-image">
-            <img src="img/instagram.svg" alt=""> <img src="img/github.svg" alt="">
+           <a href="https://www.instagram.com/wesley_farias7" target="_blank"><img src="img/instagram.svg" alt=""></a> <a href="https://www.github.com/WesleyFariasB" target="_blank"><img src="img/github.svg" alt=""></a> 
           </div>
         </div>
       </footer>
+      <script>
+        AOS.init();
+      </script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -25,10 +25,7 @@
     margin-top: -19rem;
     width:fit-content;
 }
-.rotate{
-  animation-name: animate__rotateOut;
-  animation-duration: 4000ms;
-}
+
 .circle{
   background-color: none;
   width:fit-content;
@@ -38,6 +35,10 @@
   top: -8rem;
   
 }
+.rotate{
+  animation: rotate 8s linear infinite;
+}
+
 .circle img{
   position: absolute;
   width: 5rem;
@@ -46,9 +47,19 @@
   padding-left: 2.50rem;
   
 }
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
 .post{
   display: flex;
   margin-bottom: -80px;
+  position: relative;
+  left: 3.8rem;
 }
 ul{
   margin: 0;

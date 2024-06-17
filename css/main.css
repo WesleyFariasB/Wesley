@@ -2,28 +2,19 @@ body{
     background-color: #171717;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 header{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width:fit-content;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width:fit-content;
 }
 header h1{
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 0;
-    
+  position: relative;
+  top: -5.5rem;
 }
-header h6{
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 0;
-}
-
 
 .slide, .slide2 {
   width: 100%;
@@ -87,15 +78,28 @@ header h6{
 
   .infinite{
     padding-left: 7rem;
-    margin-bottom: 150px
+    margin-bottom: 150px;
   }
-
 
   .infinite img{
-    gap: 5rem;
     width: 2.5rem;
     margin-bottom: -0.4%;
+    margin-right: 10px;
+    margin-left: 10px;
   }
+  .infinite h3{
+    overflow: hidden;
+    animation: texto 15s linear infinite;
+  }
+
+  @keyframes texto {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
   .mid{
     margin-bottom: 150px;
   }
@@ -139,6 +143,8 @@ header h6{
 }
 .last-footer{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .name{
   padding-left: 7.2rem;
@@ -152,6 +158,7 @@ header h6{
   position: absolute;
   left: 8.5rem;
   bottom: 0.6rem;
+
 }
 .final{
   position: relative;
@@ -160,9 +167,35 @@ header h6{
 
 .last-image{
     position: relative;
-    width: fit-content;
-    position: relative;
-    left: 68rem;
-    bottom: -3.3rem;
-    gap: 5px;
+    left: -11rem;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px){
+  .container{
+    width: 100%;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+}
+@media (max-width: 991px) {
+  .container{
+    width: 100%;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+}
+@media (max-width: 768px) { 
+  .container{
+    width: 100%;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+}
+@media (max-width: 560px) {
+  .container{
+    width: 100%;
+    max-width: 100rem;
+    margin: 0 auto;
+}
 }
