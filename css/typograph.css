@@ -1,15 +1,15 @@
 
 h1{
-    color: #FFF;
-    font-family: 'Kanit',sans-serif;
-    font-size: 140px;
+    color: #fff;
+    font-family: "Monument extended";
+    font-size: 128px;
     font-style: normal;
     font-weight: 400;
     line-height: 107%; /* 136.96px */
 }
 h2{
-    color: #FFF;
-    font-family: 'Kanit',sans-serif;
+    color: #fff;
+    font-family: "Monument extended";
     text-align: center;
     font-size: 64px;
     font-style: normal;
@@ -18,8 +18,8 @@ h2{
     text-transform: uppercase;
 }
 h3{
-    color: #D9D9D9;
-    font-family: 'Kanit',sans-serif;
+    color: #fff;
+    font-family: "Monument extended";
     font-size: 44px;
     font-style: normal;
     font-weight: 400;
@@ -35,7 +35,7 @@ h4{
 }
 h5{
     color: #FFF;
-    font-family: 'Inter'; 
+    font-family: 'inter'; 
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
