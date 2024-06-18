@@ -3,6 +3,10 @@
   src: url(../assets/MonumentExtended-Regular.otf);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body{
   background-color: #171717;
   margin: 0;
@@ -227,6 +231,9 @@ body{
 }
 
 @media (max-width: 1200px){
+  html {
+    overflow-x: hidden;
+  }
   .container{
     width: 100%;
     max-width: 100rem;
@@ -234,6 +241,9 @@ body{
 }
 }
 @media (max-width: 991px) {
+  html {
+    overflow-x: hidden;
+  }
   .container{
     width: 100%;
     max-width: 100rem;
@@ -241,6 +251,9 @@ body{
 }
 }
 @media (max-width: 768px) { 
+  html {
+    overflow-x: hidden;
+  }
   .container{
     width: 100%;
     max-width: 100rem;
@@ -248,10 +261,59 @@ body{
 }
 }
 @media (max-width: 560px) {
+  html {
+    overflow-x: hidden;
+  }
   .container{
     width: 100%;
     max-width: 100rem;
     margin: 0 auto;
+}
+.infinite{
+  animation:none;
+}
+.infinite ul {
+  display: list-item;
+}
+.line{
+  animation: none;
+  position: relative;
+  left: -50rem;
+}
+.section{
+  margin: 0 auto;
+  padding: 0 auto;
+  align-items: center;
+}
+.first-div h5{
+  font-family: Monument extended;
+  position: relative;
+  left: -0.5rem;
+  display: none;
+}
+.second-div img{
+top: -10rem;
+width: 24.5rem;
+left: -0.5rem;
+position: relative;
+}
+.line2 {
+animation: none;
+
+}
+.stay{
+position: relative;
+width: 30rem;
+left: -16rem;
+margin-top: 10rem;
+font-size: 14px;
+top: -12rem;
+}
+.stay img{
+ display: none;
+}
+.last-footer{
+  gap: 3rem;
 }
 }
 
@@ -269,6 +331,10 @@ body{
   }
 }
 @media (max-width: 440px) {
+
+  html {
+    overflow-x: hidden;
+  }
 
   .greeting{
     position: relative;
