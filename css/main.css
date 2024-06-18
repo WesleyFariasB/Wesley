@@ -37,6 +37,7 @@ body{
   margin-left: 5rem;
   display: flex;
   background-image: url("../img/capa.png");
+  background-repeat: no-repeat;
   align-items: end;
   flex: 1;
   width: 100%;
@@ -111,7 +112,7 @@ body{
   }
 
   .infinite{
-    padding-left: 7rem;
+    width: 100%;
     margin-bottom: 150px;
   }
 
@@ -252,4 +253,18 @@ body{
     max-width: 100rem;
     margin: 0 auto;
 }
+}
+
+@media (max-width: 1130px) {
+  .slideshow-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 780px) {
+  .slideshow {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
 }

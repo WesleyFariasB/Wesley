@@ -98,3 +98,85 @@ article {
   padding: 0;
   font-size: 24px;
 }
+
+@media (max-width: 1570px) {
+  .post {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0px 5px;
+  }
+  .section {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .second-div {
+    left: 0px;
+  }
+  .second-div img {
+    height: 8rem;
+  }
+  .first-div {
+    padding: 0px;
+  }
+  .first-div h5 {
+    font-size: 14px;
+  }
+  .section-info {
+    padding: 0px 5px;
+  }
+  .greeting {
+    margin-top: 400px;
+  }
+  .header,
+  .information {
+    margin: 0px;
+  }
+  .information {
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 780px) {
+  .header {
+    h5 {
+      font-size: 24px;
+    }
+    h1 {
+      font-size: 64px;
+    }
+    .description {
+      h3 {
+        font-size: 16px;
+      }
+    }
+    img {
+      object-fit: cover;
+    }
+  }
+  .description h3{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+  
+  .description h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+  .project {
+    margin-top: 120px;
+    h2 {
+      font-size: 32px;
+    }
+  }
+  .final {
+    left: 0;
+  }
+  .last-image {
+    left: -3rem;
+  }
+}
