@@ -101,14 +101,14 @@ article {
 @media (max-width: 2560px) {
   .post {
     display: flex;
-    gap: 150px;
+    gap: 50rem;
     height: auto;
     margin: 0 auto;
     padding: 0px 5px;
 
   }
   .section {
-    gap: 150px;
+    gap: 15rem;
     justify-content: center;
   }
   .second-div {
@@ -127,7 +127,7 @@ article {
     padding: 0px 5px;
   }
   .greeting {
-    margin-top: 400px;
+    margin-top: 25rem;
   }
   .header,
   .information {

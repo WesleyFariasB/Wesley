@@ -268,3 +268,66 @@ body{
     height: 400px;
   }
 }
+@media (max-width: 440px) {
+
+  .greeting{
+    position: relative;
+    left: -3rem;
+  }
+  .description{
+    align-items: center;
+  }
+  .circle{
+    position: relative;
+    left: 7rem;
+    top: -1rem;
+  }
+  .infinite{
+    animation:none;
+  }
+  .infinite ul {
+    display: list-item;
+  }
+  .line{
+    animation: none;
+    position: relative;
+    left: -50rem;
+  }
+  .section{
+    margin: 0 auto;
+    padding: 0 auto;
+    align-items: center;
+  }
+  .first-div h5{
+    font-family: Monument extended;
+    position: relative;
+    left: -0.5rem;
+    display: none;
+  }
+ .second-div img{
+  top: -10rem;
+  width: 24.5rem;
+  left: -0.5rem;
+  position: relative;
+ }
+ .line2 {
+  animation: none;
+  
+ }
+ .stay{
+  position: relative;
+  width: 30rem;
+  left: -19rem;
+  margin-top: 10rem;
+  font-size: 14px;
+  top: -12rem;
+ }
+ .stay img{
+   display: none;
+ }
+  .last-footer{
+    gap: 3rem;
+  }
+}
+
+
