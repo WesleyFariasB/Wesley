@@ -101,14 +101,14 @@ article {
 @media (max-width: 1920px) {
   .post {
     display: flex;
-    flex-direction: column;
-    gap: 0px;
+    gap: 150px;
     height: auto;
     margin: 0 auto;
     padding: 0px 5px;
+
   }
   .section {
-    flex-direction: column;
+    gap: 150px;
     justify-content: center;
   }
   .second-div {
