@@ -97,10 +97,18 @@
    }
 }
   @media (max-width: 560px) {
+
+    .s-digital .container .post .description h3 {
+      font-size: 20px;
+    }
+    .s-digital .container .post .description h5{
+      font-size: 15px;
+    }
+    
     
     .project h2{
       font-size: 40px;
-      margin-top: 50rem;
+      margin-top: 40rem;
     }
     
     .flex{
@@ -127,8 +135,24 @@
       position: relative;
       width: 300px;
     }
+    .s-digital .container .post .s-right{
+      margin-top: -7rem;
+    }
+  
+    .infinite ul{
+      margin-top: -5rem;
+      margin-bottom: -5rem;
+    }
     .greeting h1 {
       font-size: 60px;
     }
-    
+    .project h2{
+      margin-top: 30rem;
+    }
+    .flex div h4{
+      font-size: 11px;
+    } 
+    .flex img{
+      height: 75px;
+    }
   }
