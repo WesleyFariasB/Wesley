@@ -1,5 +1,6 @@
 .s-digital{
-  margin-bottom: -50px;
+  align-items: center;
+  justify-content: center;
 }
 
 .circle{
@@ -27,6 +28,15 @@
       transform: rotate(360deg);
   }
 }
+@keyframes slide {
+  from {
+    transform: translateX(0);
+
+  }
+  to {
+    transform: translateX(-88%);
+  }
+}
 
 article {
   display: flex;
@@ -41,6 +51,7 @@ article {
   margin-top: 5vh;
   position: absolute;
   width: 100%;
+  
 }
 
 .l1{
@@ -75,8 +86,8 @@ article {
   display: flex;
   gap: 10rem;
   height: 80vh;
-  padding: 0; /* Removes any padding that might affect the height */
-  margin: 0; /* Removes any margin that might affect the height */
+  padding: 0; 
+  margin: 0; 
 }
 
 .description{
@@ -98,164 +109,5 @@ article {
   padding: 0;
   font-size: 24px;
 }
-@media (max-width: 2560px) {
-  .post {
-    display: flex;
-    gap: 300px;
-    height: auto;
-    margin: 0 auto;
-    padding: 0px 5px;
 
-  }
-  .section {
-    gap: 200px;
-    justify-content: center;
-  }
-  .second-div {
-    left: 0px;
-  }
-  .second-div img {
-    height: 8rem;
-  }
-  .first-div {
-    padding: 0px;
-  }
-  .first-div h5 {
-    font-size: 14px;
-  }
-  .section-info {
-    padding: 0px 5px;
-  }
-  .greeting {
-    margin-top: 25rem;
-  }
-  .header,
-  .information {
-    margin: 0px;
-  }
-  .information {
-    margin-top: 300px;
-  }
-}
 
-@media (max-width: 1920px) {
-  .post {
-    display: flex;
-    gap: 150px;
-    height: auto;
-    margin: 0 auto;
-    padding: 0px 5px;
-
-  }
-  .section {
-    gap: 150px;
-    justify-content: center;
-  }
-  .second-div {
-    left: 0px;
-  }
-  .second-div img {
-    height: 8rem;
-  }
-  .first-div {
-    padding: 0px;
-  }
-  .first-div h5 {
-    font-size: 14px;
-  }
-  .section-info {
-    padding: 0px 5px;
-  }
-  .greeting {
-    margin-top: 400px;
-  }
-  .header,
-  .information {
-    margin: 0px;
-  }
-  .information {
-    margin-top: 300px;
-  }
-}
-
-@media (max-width: 1570px) {
-  .post {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    height: auto;
-    margin: 0 auto;
-    padding: 0px 5px;
-  }
-  .section {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .second-div {
-    left: 0px;
-  }
-  .second-div img {
-    height: 8rem;
-  }
-  .first-div {
-    padding: 0px;
-  }
-  .first-div h5 {
-    font-size: 14px;
-  }
-  .section-info {
-    padding: 0px 5px;
-  }
-  .greeting {
-    margin-top: 400px;
-  }
-  .header,
-  .information {
-    margin: 0px;
-  }
-  .information {
-    margin-top: 300px;
-  }
-}
-
-@media (max-width: 780px) {
-  .header {
-    h5 {
-      font-size: 24px;
-    }
-    h1 {
-      font-size: 64px;
-    }
-    .description {
-      h3 {
-        font-size: 16px;
-      }
-    }
-    img {
-      object-fit: cover;
-    }
-  }
-  .description h3{
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-  }
-  
-  .description h5 {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-  }
-  .project {
-    margin-top: 120px;
-    h2 {
-      font-size: 32px;
-    }
-  }
-  .final {
-    left: 0;
-  }
-  .last-image {
-    left: -3rem;
-  }
-}

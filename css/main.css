@@ -13,15 +13,42 @@ body{
   padding: 0;
   overflow-x: hidden;
 }
+.image-container {
+  position: relative;
+  width: 100%; 
+  height: 400px; 
+  overflow: hidden;
+}
 
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/capa3.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+
+.header{
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
 .greeting {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   z-index: 99;
   margin: 0;
-  margin-left: 5rem;
   padding: 0;
+  
 }
 
 .greeting h5 {
@@ -40,18 +67,10 @@ body{
 .header {
   margin-left: 5rem;
   display: flex;
-  background-image: url("../img/capa.png");
-  background-repeat: no-repeat;
   align-items: end;
   flex: 1;
   width: 100%;
   height: 100%;
-  /* background: blue; */
-}
-
-.header img {
-  position: absolute;
-  z-index: 99;
 }
 
 .slide, .slide2 {
@@ -74,16 +93,16 @@ body{
   align-items: center;
   gap: 5rem;
   margin-bottom: 120px;
+  margin: 0 15vw;
+  
 }
 
-/* Slideshow */
 .slideshow {
   position: relative;
   width: 500px;
   height: 500px;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -99,66 +118,59 @@ body{
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a grey background color */
 .prev:hover, .next:hover {
   background-color: #f1f1f1;
   color: black;
 }
   .project{
-    margin-top: 30vh;
-    margin-bottom: 60px;
-  }
-
-  .infinite{
-    width: 100%;
-    margin-bottom: 150px;
+    margin-top: 15vh;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
   }
 
   .infinite ul {
     display: flex;
-    overflow: hidden;
     list-style: none;
+    animation: 15s slide infinite linear;
+    white-space: nowrap;
+   
   }
 
   .infinite li {
     display: flex;
     width: fit-content;
+    
   }
-
-  .infinite li p {
-
-    color: #fff;
-    font-size: 29px;
-    width: fit-content;
-    flex-wrap: nowrap;
-    font-family: "Monument extended";
-  }
-
   .infinite img{
     width: 2.5rem;
     margin-bottom: -0.4%;
     margin-right: 10px;
     margin-left: 10px;
   }
+
   .infinite {
-    overflow: hidden;
-    animation: texto 15s linear infinite;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 150px;
+    margin-top: 10rem;
   }
 
-  @keyframes texto {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
+  .infinite li p {
+    color: #fff;
+    font-size: 32.5px;
+    width: fit-content;
+    font-family: "Monument extended";
+    
+  }
+
   .mid{
     margin-bottom: 150px;
   }
@@ -229,171 +241,59 @@ body{
     left: -11rem;
     cursor: pointer;
 }
+.line-svg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
 
-@media (max-width: 1200px){
-  html {
-    overflow-x: hidden;
-  }
-  .container{
-    width: 100%;
-    max-width: 100rem;
-    margin: 0 auto;
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
+.flex h4{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  color: #D9D9D9;
+  font-family: "Monument Extended";
+  font-size: 14px;
 }
-@media (max-width: 991px) {
-  html {
-    overflow-x: hidden;
-  }
-  .container{
-    width: 100%;
-    max-width: 100rem;
-    margin: 0 auto;
+.flex img{
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
+
+.little{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+ 
 }
-@media (max-width: 768px) { 
-  html {
-    overflow-x: hidden;
-  }
-  .container{
-    width: 100%;
-    max-width: 100rem;
-    margin: 0 auto;
-}
-}
-@media (max-width: 560px) {
-  html {
-    overflow-x: hidden;
-  }
-  .container{
-    width: 100%;
-    max-width: 100rem;
-    margin: 0 auto;
-}
-.infinite{
-  animation:none;
-}
-.infinite ul {
-  display: list-item;
-}
-.line{
-  animation: none;
-  position: relative;
-  left: -50rem;
-}
-.section{
-  margin: 0 auto;
-  padding: 0 auto;
+.little h5{
+  color: #D9D9D9;
+  text-align: center;
+  font-family: "Monument Extended";
+  font-size: 20px;
+  margin: 5rem;
+} 
+
+.space{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-.first-div h5{
-  font-family: Monument extended;
-  position: relative;
-  left: -0.5rem;
-  display: none;
-}
-.second-div img{
-top: -10rem;
-width: 24.5rem;
-left: -0.5rem;
-position: relative;
-}
-.line2 {
-animation: none;
 
-}
-.stay{
-position: relative;
-width: 30rem;
-left: -16rem;
-margin-top: 10rem;
-font-size: 14px;
-top: -12rem;
-}
-.stay img{
- display: none;
-}
-.last-footer{
-  gap: 3rem;
-}
-}
-
-@media (max-width: 1130px) {
-  .slideshow-container {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 780px) {
-  .slideshow {
-    position: relative;
-    width: 400px;
-    height: 400px;
-  }
-}
-@media (max-width: 440px) {
-
-  html {
-    overflow-x: hidden;
-  }
-
-  .greeting{
-    position: relative;
-    left: -3rem;
-  }
-  .description{
-    align-items: center;
-  }
-  .circle{
-    position: relative;
-    left: 7rem;
-    top: -1rem;
-  }
-  .infinite{
-    animation:none;
-  }
-  .infinite ul {
-    display: list-item;
-  }
-  .line{
-    animation: none;
-    position: relative;
-    left: -50rem;
-  }
-  .section{
-    margin: 0 auto;
-    padding: 0 auto;
-    align-items: center;
-  }
-  .first-div h5{
-    font-family: Monument extended;
-    position: relative;
-    left: -0.5rem;
-    display: none;
-  }
- .second-div img{
-  top: -10rem;
-  width: 24.5rem;
-  left: -0.5rem;
-  position: relative;
- }
- .line2 {
-  animation: none;
-  
- }
- .stay{
-  position: relative;
-  width: 30rem;
-  left: -19rem;
-  margin-top: 10rem;
-  font-size: 14px;
-  top: -12rem;
- }
- .stay img{
-   display: none;
- }
-  .last-footer{
-    gap: 3rem;
-  }
-}
 
 

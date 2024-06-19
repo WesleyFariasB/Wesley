@@ -1,0 +1,128 @@
+@media (min-width: 1920px){
+    header{
+      margin-top: 5rem;
+    }
+   .greeting .image-container{
+    width: 800px;
+    height: 620px;
+   }
+    .post {
+      display: flex;
+      gap: 150px;
+      height: auto;
+      margin: 0 auto;
+      padding: 0px 5px;
+  
+    }
+  
+    }
+    
+  
+  
+  @media (max-width: 1500px) {
+    html {
+      overflow-x: hidden;
+    }
+    .image-container{
+      margin-top: 50rem;
+    }
+    .header{
+      position: absolute;
+    }
+    .post {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .project h2{
+      margin-top: 35rem;
+    }
+    
+  }
+@media (max-width: 1250px){
+    
+    .container{
+      width: 100%;
+      max-width: 100rem;
+      margin: 0 auto;
+    }
+    .slideshow-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+
+    }
+    .project h2{
+      margin-top: 45rem;
+    }
+    .flex {
+      flex-direction: column;
+    }
+}
+  @media (max-width: 880px) {
+    .flex{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+
+    }
+    .flex img{
+      margin-top: 3rem;
+    }
+   
+}
+
+  @media (max-width: 768px) {
+   header{
+    position: relative;
+    width: 400px;
+   }
+   .greeting h1{
+    font-size: 80px;
+   }
+   .slideshow-container .slideshow {
+    width: 280px;
+    height: 280px;
+   }
+}
+  @media (max-width: 560px) {
+  
+    .project h2{
+      font-size: 40px;
+      margin-top: 45rem;
+    }
+    .flex{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      
+    }
+    .flex img{
+      margin-top: 2rem;
+      height: 90px;
+    }
+    footer .space{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+  @media (max-width: 440px){
+    header{
+      position: relative;
+      width: 300px;
+    }
+    .greeting h1 {
+      font-size: 60px;
+    }
+    
+  }
