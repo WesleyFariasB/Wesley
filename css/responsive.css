@@ -7,9 +7,9 @@
       width: 800px;
       height: 620px;
    }
-   .slideshow-container .slideshow {
-    width: 600px;
-    height: 600px;
+    .slideshow-container .slideshow {
+      width: 750px;
+      height: 750px;
    }
     .post {
       display: flex;
