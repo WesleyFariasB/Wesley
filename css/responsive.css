@@ -7,6 +7,10 @@
       width: 800px;
       height: 620px;
    }
+   .slideshow-container .slideshow {
+    width: 600px;
+    height: 600px;
+   }
     .post {
       display: flex;
       gap: 150px;
